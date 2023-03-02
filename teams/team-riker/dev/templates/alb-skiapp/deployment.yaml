@@ -17,6 +17,9 @@ spec:
         - name: skiapp
           #image: sharepointoscar/skiapp:928ac6f31b2192ed56c9293825e36228628efee7
           image: alexroman/skiapp:0.0.2
+          env:
+            - name: ENABLE_TRACING
+              value: 'true'
           ports:
             - containerPort: 8080
           resources:
